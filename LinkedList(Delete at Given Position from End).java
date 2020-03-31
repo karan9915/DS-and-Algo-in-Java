@@ -13,7 +13,7 @@ class LinkedList
 {
 	static Node head;
 
-    void deleteAtGivenPositionFromEnd(int pos)
+    Node deleteAtGivenPositionFromEnd(int pos)
     {
     	reverse();
 
@@ -30,6 +30,7 @@ class LinkedList
     	prev.next = null;
 
     	reverse();
+	    return temp;
     }
 
 	void reverse()
